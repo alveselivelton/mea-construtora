@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Fundo da tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(20, 20, 20, 0.8)), url("../img/img-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho-imagem {
+    height: 180px;
+    width: 240px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho-menu a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.cabecalho-menu a:hover {
+    border-bottom: 1px solid white;
+    transition: .5s;
+}
+
+/* Conteúdo principal escrito */
+
+.conteudo-principal {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-principal-escrito h1 {
+    text-align: center;
+    font-size: 3.8rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.conteudo-principal-escrito h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal-escrito p {
+    text-align: center;
+    font-size: 2rem;
+    color: #DDD;
+    margin-top: 10px;
+}
+
+/* Formulário */
+
+.form-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 48vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form-contato input[type=text], .form-contato input[type=email], .form-contato textarea {
+    background-color: white;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.form-contato input[type=text]::placeholder, .form-contato input[type=email]::placeholder, .form-contato textarea::placeholder {
+    color: black;
+}
+
+.form-contato textarea {
+    height: 110px;
+}
+
+.form-contato input[type=submit] {
+    width: 120px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-contato input[type=submit]:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;   
+}
