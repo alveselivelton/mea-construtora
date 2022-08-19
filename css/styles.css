@@ -1,149 +1,274 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 /* Reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* Fundo da tela */
 
 html {
-    width: 100vw;
-    height: 100vh;
-    font-size: 62.5%;
-    color: white;
-    font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-size: 62.5%;
+  color: white;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-    background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(20, 20, 20, 0.8)), url("../img/img-1.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(20, 20, 20, 0.8)),
+    url("../img/img-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
 }
 
 /* Cabeçalho */
 
 .cabecalho {
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(17, 17, 17, 0.3);
+  padding: 2rem;
 }
 
-.cabecalho-imagem {
-    height: 180px;
-    width: 240px;
+.cabecalho h3 {
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  margin: 0 2rem;
 }
 
-.cabecalho-menu {
-    display: flex;
-    gap: 20px;
+.cabecalho i {
+  color: #fff;
+  cursor: pointer;
+  display: none;
 }
 
-.cabecalho-menu a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.7rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 1px solid transparent;
+.cabecalho-menu ul {
+  display: flex;
+  list-style: none;
 }
 
-.cabecalho-menu a:hover {
-    border-bottom: 1px solid white;
-    transition: .5s;
+.cabecalho-menu ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 0 0.5rem;
+  margin-right: 2rem;
+  padding: 0.5rem 0;
+}
+
+.cabecalho-menu ul li a:hover {
+  border-bottom: 2px solid white;
+  transition: 0.5s;
 }
 
 /* Conteúdo principal escrito */
 
 .conteudo-principal {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .conteudo-principal-escrito {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .conteudo-principal-escrito h1 {
-    text-align: center;
-    font-size: 3.8rem;
-    letter-spacing: 0.2rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.conteudo-principal-escrito h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 3.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .conteudo-principal-escrito p {
-    text-align: center;
-    font-size: 2rem;
-    color: #DDD;
-    margin-top: 10px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #ddd;
+  margin-top: 10px;
 }
 
 /* Formulário */
 
 .form-content {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 48vh;
-    width: 20vw;
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 300px;
+  min-width: 260px;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 .form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.form-contato input[type=text], .form-contato input[type=email], .form-contato textarea {
-    background-color: white;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+  background-color: white;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
 }
 
-.form-contato input[type=text]::placeholder, .form-contato input[type=email]::placeholder, .form-contato textarea::placeholder {
-    color: black;
+.form-contato input[type="text"]::placeholder,
+.form-contato input[type="email"]::placeholder,
+.form-contato textarea::placeholder {
+  color: black;
 }
 
 .form-contato textarea {
-    height: 110px;
+  height: 110px;
 }
 
-.form-contato input[type=submit] {
-    width: 120px;
-    height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: .5s;
+.form-contato input[type="submit"] {
+  width: 120px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.form-contato input[type=submit]:hover {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
+.form-contato input[type="submit"]:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Responsivo */
+
+@media (max-width: 950px) {
+  .cabecalho i {
+    display: block;
+    position: fixed;
+    right: 30px;
+    font-size: 3.5rem;
+    z-index: 10;
+  }
+
+  .cabecalho-menu ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    background-color: rgb(37, 35, 35);
+  }
+
+  .cabecalho-menu ul.open {
+    right: 0;
+  }
+
+  .cabecalho-menu ul li {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .cabecalho-menu ul li a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .conteudo-principal-escrito h1 {
+    font-size: 3.4rem;
+  }
+
+  .conteudo-principal-escrito p {
+    font-size: 2rem;
+  }
+
+  .conteudo-principal-escrito .form-content {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  .conteudo-principal-escrito h1 {
+    font-size: 3rem;
+  }
+
+  .conteudo-principal-escrito p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .cabecalho h3,
+  .cabecalho i {
+    font-size: 2.2rem;
+  }
+
+  .conteudo-principal-escrito h1 {
+    font-size: 3.2rem;
+  }
+
+  .conteudo-principal-escrito p {
+    font-size: 2rem;
+  }
+
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 445px) {
+  .cabecalho h3 {
+    margin: 0;
+  }
+
+  .cabecalho i {
+    right: 20px;
+  }
+
+  .conteudo-principal-escrito h1 {
+    font-size: 2.4rem;
+  }
+
+  .conteudo-principal-escrito p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .cabecalho-menu ul {
+    width: 100%;
+  }
+
+  .conteudo-principal-escrito h1 {
+    font-size: 2rem;
+  }
+
+  .conteudo-principal-escrito p {
+    font-size: 1.45rem;
+  }
 }
