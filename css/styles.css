@@ -225,19 +225,19 @@ body {
     font-size: 2.2rem;
   }
 
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+
   .conteudo-principal-escrito h1 {
     font-size: 3.2rem;
   }
 
   .conteudo-principal-escrito p {
     font-size: 2rem;
-  }
-
-  .conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 20px;
   }
 }
 
